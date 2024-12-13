@@ -1,0 +1,95 @@
+{
+  "destinations": [
+      {
+          "id": 1,
+          "name": "Paris",
+          "country": "France",
+          "description": "The City of Light, renowned for its art, culture, and iconic landmarks",
+          "averageCostPerDay": 275,
+          "bestTimeToVisit": "April to June, September to October",
+          "mainAttractions": [
+              "Eiffel Tower",
+              "Louvre Museum", 
+              "Notre-Dame Cathedral"
+          ],
+          "averageWeather": "Mild",
+          "imageUrl": "/dest-images/paris.jpg"
+      },
+      {
+          "id": 2,
+          "name": "Tokyo",
+          "country": "Japan",
+          "description": "A fascinating blend of ultramodern and traditional experiences",
+          "averageCostPerDay": 350,
+          "bestTimeToVisit": "March to May, September to November",
+          "mainAttractions": [
+              "Tokyo Tower",
+              "Senso-ji Temple",
+              "Shibuya Crossing"
+          ],
+          "averageWeather": "Moderate",
+          "imageUrl": "/dest-images/tokyo.jpg"
+      },
+      {
+          "id": 3,
+          "name": "New York City",
+          "country": "United States",
+          "description": "The city that never sleeps, bustling with energy, culture, and endless possibilities",
+          "averageCostPerDay": 300,
+          "bestTimeToVisit": "April to June, September to early November",
+          "mainAttractions": [
+              "Statue of Liberty",
+              "Central Park", 
+              "Empire State Building"
+          ],
+          "averageWeather": "Moderate",
+          "imageUrl": "/dest-images/nyc.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Barcelona",
+        "country": "Spain",
+        "description": "A Mediterranean gem known for its unique architecture, vibrant culture, and artistic heritage",
+        "averageCostPerDay": 275,
+        "bestTimeToVisit": "May to July, September to October",
+        "mainAttractions": [
+            "Sagrada Familia",
+            "Park Güell",
+            "Gothic Quarter"
+        ],
+        "averageWeather": "Warm",
+        "imageUrl": "/dest-images/barcelona.jpg"
+    },
+      {
+          "id": 5,
+          "name": "Sydney",
+          "country": "Australia",
+          "description": "A cosmopolitan city with stunning harbor views, world-class architecture, and unique wildlife",
+          "averageCostPerDay": 325,
+          "bestTimeToVisit": "September to November, March to May",
+          "mainAttractions": [
+              "Sydney Opera House",
+              "Bondi Beach",
+              "Harbour Bridge"
+          ],
+          "averageWeather": "Mild",
+          "imageUrl": "/dest-images/sydney.jpg"
+      },
+      
+      {
+          "id": 6,
+          "name": "Dubai",
+          "country": "United Arab Emirates",
+          "description": "A futuristic metropolis blending ultramodern architecture with traditional Middle Eastern culture",
+          "averageCostPerDay": 400,
+          "bestTimeToVisit": "November to March",
+          "mainAttractions": [
+              "Burj Khalifa",
+              "Palm Jumeirah",
+              "Dubai Mall"
+          ],
+          "averageWeather": "Hot",
+          "imageUrl": "/dest-images/dubai.jpg"
+      }
+  ]
+}

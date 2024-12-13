@@ -1,0 +1,453 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-radius: 10px;
+    --main-padding: 10px;
+    --line-heightv: 2;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background-color: #f3f2e7;
+    margin: 0 15px;
+}
+
+body h3 {
+    margin: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "skills about"
+        "ed exp"
+        "pro pro"
+        "certi achieve"
+        "footer footer";
+    height: 100vh;
+    gap: 1.5rem;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    border-radius: 15px;
+    margin-top: 5px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.myText {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+#userName,
+#jobtitle {
+    padding: 5px 0;
+    font-size: large;
+}
+
+.myText,
+header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#profile,
+#mainNav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ham-icon {
+    display: none;
+}
+
+nav {
+    float: right;
+    width: max-content;
+    text-align: center;
+    margin:15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 10px;
+    font-size: large;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: Lavender;
+    color: black;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: #f7cbcf;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+
+}
+
+
+#skills span {
+    background-color: rgb(252, 249, 249);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 7px;
+    display: inline-block;
+}
+
+#skills:hover,
+#about:hover,
+#experience:hover,
+#education:hover,
+#projects:hover,
+#certfications:hover,
+#achievements:hover {
+    border: 1px solid white;
+}
+
+#about {
+    grid-area: about;
+    background-color: #f9d2c8;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#about p {
+    margin-left: 10px;
+    line-height: var(--line-heightv);
+}
+
+#experience {
+    grid-area: exp;
+    background-color: #ddeedd;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+#experience img,
+#education img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+#education {
+    grid-area: ed;
+    background-color: #e4d1d1;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+.workText,
+.edText {
+    color: black;
+}
+
+#jobtitle,
+.workRole,
+.edRole,
+#duration {
+    font-style: italic;
+    font-size: small;
+}
+
+.workText,
+#experience img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.edText,
+#education img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#duration {
+    float: right;
+}
+
+#details {
+    margin: 10px;
+}
+
+#proDetails {
+    margin: 10px;
+}
+
+#projects {
+    grid-area: pro;
+    background-color: #cdcde763;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: separte;
+    border-radius: 5px;
+    border-spacing: 10px;
+}
+
+.project-table td {
+    width: 49%;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    vertical-align: middle;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9ece3
+}
+
+#projects img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 10px;
+}
+
+#projects img,
+#ptitle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#certfications {
+    grid-area: certi;
+    background-color: #f6d8db;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#achievements {
+    grid-area: achieve;
+    background-color: #70ae752b;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#certifications img,
+#achievements img {
+    width: 50px;
+    height: 50px;
+}
+
+#achievements img {
+    margin: 5px;
+}
+
+.certiImage,
+.achieveImage {
+    float: left;
+}
+
+.certi,
+.achieve {
+    overflow: hidden;
+    line-height: 2;
+    color: #333;
+}
+
+i {
+    margin-right: 5px;
+}
+
+#mapIcon {
+    font-size: 18px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+footer p {
+    padding: 3px;
+    color: white;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "about"
+            "skills"
+            "ed"
+            "exp"
+            "pro"
+            "certi"
+            "achieve"
+            "footer";
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "profile profile nav-icon"
+            "nav-menu nav-menu nav-menu";
+        padding: 10px;
+    }
+
+    .myText,
+    header img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #profile {
+        grid-area: profile;
+    }
+
+    .ham-icon {
+        grid-area: nav-icon;
+        display: inline-block;
+        color: white;
+        padding: 5px 10px;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.responsive ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    nav.responsive ul li {
+        display: block;
+        text-align: center;
+        margin-left: 95px;
+        border-bottom: 1px solid white;
+    }
+
+    nav.responsive ul li a {
+        display: block;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #userName,
+    #jobtitle {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    header {
+        padding: 5px 0;
+        font-size: small;
+    }
+
+    #jobtitle {
+        float: left;
+    }
+
+    header img {
+        float: left;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    #about,
+    #education,
+    #experience,
+    #projects,
+    #certifications,
+    #achievements {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #projects img {
+        float: right;
+        width: 80px;
+        height: auto;
+    }
+
+    .project-table td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer .left,
+    footer .right {
+        float: none;
+        text-align: center;
+    }
+}
